@@ -10,7 +10,6 @@ Write a function that accepts a String as its only parameter, and returns true i
 function solution1(str) {
     let unique = "";
 
-    // for (let i in str) if (unique.indexOf(str[i]) == -1) unique += str[i];
     for (let letter of str) if (unique.indexOf(letter) == -1) unique += letter;
 
     return str == unique;
