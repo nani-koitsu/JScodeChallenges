@@ -113,8 +113,8 @@ console.log(`Performance of solution3() is ${performance} sec`);
 /*
 ************************* PERFORMANCE RESULTS *************************
 
-Performance of solution1() is 0.033 sec
-Performance of solution2() is 0.048 sec
+Performance of solution1() is      0.033 sec
+Performance of solution2() is      0.048 sec
 Performance of solution2short() is 0.049 sec
-Performance of solution3() is 0.036 sec
+Performance of solution3() is      0.036 sec
 */
