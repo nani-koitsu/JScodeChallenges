@@ -7,7 +7,7 @@
 */
 
 // loop
-function solution1(str){
+function solution1(str) {
 }
 
 // regExp
