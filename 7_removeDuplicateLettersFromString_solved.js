@@ -45,7 +45,6 @@ console.assert(solution3("hello")       === "helo",   `solution3b() failed`);
 console.assert(solution3("Mississippi") === "Misp",   `solution3c() failed`);
 
 // filter
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 function solution4(str) {
     return str.split("").filter(
         function(letter, index, array){
