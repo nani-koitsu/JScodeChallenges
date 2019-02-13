@@ -10,13 +10,10 @@
 */
 
 function solution1(str1, str2){
-    // 1. return false if length of str1 is not equal to length of str2
     if (str1.length != str2.length) return false;
 
-    // 2. create variable from repeating str1 twice
     let combined = str1 + str1;
 
-    // 3. return if str2 exists in combined string
     return combined.indexOf(str2) != -1;
 }
 
@@ -26,6 +23,35 @@ console.assert(solution1("abcde", "abced")  === false, `solution1a() failed!`);
 console.assert(solution1("abc", "a")        === false, `solution1a() failed!`);
 
 
+function solution2(str1, str2){
+    if (str1.length !== str2.length){ return false; }
+    
+    let startingRotation = "";
+    let endRotation      = "";
+    let fullRotation     = "";
+    let i = 0;
+    
+    for(var j=0; j < str2.length; j++){
+        //we’ve reached the potential start of rotation 
+        if (str2[j] === str1[i]) { 
+            startingRotation += str2[j]
+            i++;
+        } else {
+            endRotation += str2[j]
+            i=0;
+        }
+    }
+
+    fullRotation = startingRotation + endRotation;
+    
+    return fullRotation === str1;
+}
+
+
+console.assert(solution2("abcde", "eabcd")  === true, `solution2a() failed!`);
+console.assert(solution2("abcde", "cdeab")  === true,    `solution2b() failed!`);
+console.assert(solution2("abcde", "abced")  === false, `solution2c() failed!`);
+console.assert(solution2("abc", "a")        === false,    `solution2d() failed!`);
 
 /*
 ************************* PERFORMANCE TESTS *************************
@@ -49,8 +75,21 @@ let performance = (finishTime - startTime) / 1000;
 
 console.log(`Performance of solution1() is ${performance} sec`);
 
+// test solution2()
+startTime = new Date().getTime();
+
+solution2(text1, text2);
+solution2(text1, text1);
+solution2(text2, text2);
+
+finishTime = new Date().getTime();
+performance = (finishTime - startTime) / 1000;
+
+console.log(`Performance of solution2() is ${performance} sec`);
+
 /*
 ************************* PERFORMANCE RESULTS *************************
 
 Performance of solution1() is 0.002 sec
+Performance of solution2() is 0.079 sec
 */
