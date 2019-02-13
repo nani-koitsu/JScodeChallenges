@@ -9,7 +9,7 @@ let numbers = [3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 
 
 // if
 function solution1(number) {
-    // 1. if number is equal or less then 1,  return false
+    // 1. if number is equal to or less than 1,  return false
     // 2. else if number is equal to 2, 3, 5 or 7, return true
     // 3. else if number is % by 2, 3, 5, 7 == 0,  return false
     // 4. else return true
@@ -21,7 +21,7 @@ for (let number of numbers) {
 
 // loop
 function solution2(number) {
-    // 1. if number is less or equal then 1, return false
+    // 1. if number is less than or equal to 1, return false
     // 2. if number is equal to 2, return true
     
     // 3. create variable equal to ceil of square root of number
@@ -49,13 +49,13 @@ function generatePrime(max) {
     /*
         Mark your entire range of numbers as being prime, so let’s say that’s 0 to 10. We know that 0 and 1 can’t be prime by definition, so we mark those as not prime. Now we loop from 2 up to the maximum of our range: if that number is currently marked prime, then we can mark all its multiples as not prime. So, 2 is prime, which means 4, 6, and 8 are not, so we mark them as not prime. We then continue to the next number, which is 3, and mark its multiples as not prime: 6 and 9. We then continue to 4, but it’s already been marked as not prime so we can continue to 5, and so on.
     */
-    // 1. if max is less or equal to 1, return empty array
+    // 1. if max is less than or equal to 1, return empty array
 
     // 2. create array (sieve) of max items and fill it with true(prime) boolean values
     // 3. mark first and second items of sieve as false(not prime)
 
     // 4 loop from 2 up to max increasing index by 1
-        // 5. if item of sieve is true run one more loop starting from index of this item multiplied by itself, up to max, increasing index bu index of outer loop
+        // 5. if item of sieve is true run one more loop starting from index of this item multiplied by itself, up to max, increasing index by index of outer loop
             // 6. mark element of sieve at current index as false(not prime)
 
     // 7. reduce sieve
