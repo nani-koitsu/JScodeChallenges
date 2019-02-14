@@ -1,5 +1,5 @@
 /*
-    Given a string in English, return a tuple containing the number of vowels and consonants.
+    Given a string in English, return an array containing the number of vowels and consonants.
 
     Tip: Vowels are the letters, A, E, I, O, and U; consonants are the letters B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z.
     
@@ -17,7 +17,6 @@ function solution1(str){
     for (let letter of lowerStr) {
         if (vowels.indexOf(letter) != -1) vowelCount++;
         else if (consonants.indexOf(letter) != -1) consonantCount++;       
- 
     }
     
     return [vowelCount, consonantCount];
@@ -74,6 +73,6 @@ console.log(`Performance of solutionGreg() is ${performance} sec`);
 /*
 ************************* PERFORMANCE RESULTS *************************
 
-Performance of solution1() is 0.042 sec
+Performance of solution1() is    0.042 sec
 Performance of solutionGreg() is 0.094 sec
 */
