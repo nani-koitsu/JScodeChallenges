@@ -1,10 +1,12 @@
 /*
+    Difficulty: Easy
+    
     Write a function that accepts a String as its only parameter, and returns true if the string reads the same when reversed, ignoring case.
 
-    solution("rotator") === true
+    solution("rotator")                   === true
     solution("Rats live on no evil star") === true
-    solution("Never odd or even") === false
-    solution("Hello, world") === false
+    solution("Never odd or even")         === false
+    solution("Hello, world")              === false
 */
 
 // reverse
