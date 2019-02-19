@@ -29,8 +29,9 @@ function solution1(str) {
 
                 // 11. call permute(left + right, current + strArr[i])
 
+    // 12. call permute(str)
     
-    // 12. return result
+    // 13. return result
 }
 
 
