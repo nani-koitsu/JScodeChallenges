@@ -3,7 +3,7 @@
 
     Write a function that returns all possible permutations of a given input string.
 
-    Tip1: A string permutation is any given rearrangement of its letters, for example boamtw is a permutation of "wombat".
+    Tip1: A string permutation is any given rearrangement of its letters, for example "boamtw" is a permutation of "wombat".
 
     solution("a")             == ["a"];
     solution("ab").sort()     == ["ab", "ba"].sort();
