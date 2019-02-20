@@ -21,5 +21,4 @@ function solution(str) {
 /*
 ************************* PERFORMANCE RESULTS *************************
 
-Performance of solution1() is 0.175 sec
 */
