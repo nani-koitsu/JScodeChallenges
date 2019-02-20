@@ -9,11 +9,4 @@
 */
 
 function solution1(min, max) {
-    // 1. if "min" is less than or equal to "max"
-        // 2. return "min"
-
-    // 3. use "Math" global object to generate random number
-    // 4. multiply random number by ("max" - "min") and add "min"
-
-    // 5. return result
 }
