@@ -16,17 +16,34 @@ let b = 2;
 
 // solution1
 
+console.assert(a == 2 == true, `solutio1a() failed!`);
+console.assert(b == 1 == true, `solutio1b() failed!`);
+
+
 a = 1;
 b = 2;
 
 // solution2
+
+
+// console.assert(a == 2 == true, `solutio2a() failed!`);
+// console.assert(b == 1 == true, `solutio2b() failed!`);
+
 
 a = 1;
 b = 2;
 
 // solution3
 
+
+// console.assert(a == 2 == true, `solutio3a() failed!`);
+// console.assert(b == 1 == true, `solutio3b() failed!`);
+
+
 a = 1;
 b = 2;
 
 // solution4
+
+// console.assert(a == 2 == true, `solutio4a() failed!`);
+// console.assert(b == 1 == true, `solutio4b() failed!`);
