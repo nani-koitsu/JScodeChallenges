@@ -1,9 +1,9 @@
 /*
     Difficulty: Easy    
 
-    Swap two positive variable integers, a and b, without using a temporary variable.
+    Swap two positive variable integers, "a" and "b", without using a temporary variable.
 
-    Before running your code a should be 1 and b should be 2; afterwards, b should be 1 and a should be 2.
+    Before running your code "a" should be "1" and "b" should be "2"; afterwards, "b" should be "1" and "a" should be "2".
     let a = 1;
     let b = 2;
     solution
