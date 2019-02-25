@@ -16,8 +16,8 @@ let b = 2;
 
 // solution1
 // 1. assign sum of "a" and "b" to "a"
-// 2. substract "b" from "a" and assign it to "b"
-// 3. substract "b" from "a" and assign it to "a"
+// 2. subtract "b" from "a" and assign it to "b"
+// 3. subtract "b" from "a" and assign it to "a"
 
 a = 1;
 b = 2;

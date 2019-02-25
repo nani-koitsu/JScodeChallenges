@@ -11,7 +11,7 @@
     b == 1 == true
 
     Hints:
-    1) try to sum and substract
+    1) try to sum and subtract
     2) XOR
     3) use array
 */

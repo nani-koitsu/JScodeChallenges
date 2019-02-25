@@ -34,13 +34,13 @@ function solution3(str1, str2) {
 function solution4(str1, str2) {
     // 1. delete str2 from str1 by using split(str2)
     // 2. join it back to string (str1Replaced)
-    // 3. substruct length of str1Replaced from original str1
+    // 3. subtruct length of str1Replaced from original str1
 }
 
 function solution5(str1, str2) {
     // 1. create regular expression(regExp) from str2 with "g" modifier
     // 2. replace regExp with "" in str1
-    // 3. substruct length of str1 after replacment from original str1
+    // 3. subtruct length of str1 after replacment from original str1
 }
 
 
