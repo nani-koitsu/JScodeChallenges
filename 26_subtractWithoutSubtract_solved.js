@@ -39,7 +39,7 @@ function solutionGreg(x, y) {
     return Math.abs(solutionGreg(x ^ y, (~x & y) << 1));
 }
 
-console.assert(solutionGreg(9, 5)   == -4,  `solutionGrega() failed!`);
+console.assert(solutionGreg(5, 9)   == 4,  `solutionGrega() failed!`);
 console.assert(solutionGreg(10, 30) == 20, `solutionGregb() failed!`);
 
 
@@ -58,3 +58,77 @@ function solutionChrisJoe(subtract, from) {
 
 console.assert(solutionChrisJoe(9, 5)   == -4,  `solutionChrisJoea() failed!`);
 console.assert(solutionChrisJoe(10, 30) == 20,  `solutionChrisJoeb() failed!`);
+
+/*
+************************* PERFORMANCE TESTS *************************
+*/
+
+// import numbers for test
+const Numbers = require("./numbers");
+const numbers = new Numbers();
+const testNum = numbers.generatePrime(10*1000*1000);
+
+
+// test solution1()
+let startTime  = new Date().getTime();
+
+for (let n of testNum) solution1(217864, n);
+
+let finishTime  = new Date().getTime();
+let performance = (finishTime - startTime) / 1000;
+
+console.log(`Performance of solution1() is ${ performance } sec`);
+
+
+// test solution2()
+startTime  = new Date().getTime();
+
+for (let n of testNum) solution2(217864, n);
+
+finishTime  = new Date().getTime();
+performance = (finishTime - startTime) / 1000;
+
+console.log(`Performance of solution2() is ${ performance } sec`);
+
+
+// test solution3()
+startTime  = new Date().getTime();
+
+for (let n of testNum) solution3(217864, n);
+
+finishTime  = new Date().getTime();
+performance = (finishTime - startTime) / 1000;
+
+console.log(`Performance of solution3() is ${ performance } sec`);
+
+
+// test solutionGreg()
+startTime  = new Date().getTime();
+
+for (let n of testNum) solutionGreg(217864, n);
+
+finishTime  = new Date().getTime();
+performance = (finishTime - startTime) / 1000;
+
+console.log(`Performance of solutionGrerg() is ${ performance } sec`);
+
+
+// test solutionChrisJoe()
+startTime  = new Date().getTime();
+
+for (let n of testNum) solutionChrisJoe(217864, n);
+
+finishTime  = new Date().getTime();
+performance = (finishTime - startTime) / 1000;
+
+console.log(`Performance of solutionChrisJoe() is ${ performance } sec`);
+
+/*
+************************* PERFORMANCE RESULTS *************************
+
+Performance of solution1() is        0.015 sec
+Performance of solution2() is        0.015 sec
+Performance of solution3() is        0.014 sec
+Performance of solutionGrerg() is    0.057 sec
+Performance of solutionChrisJoe() is too slow
+*/
