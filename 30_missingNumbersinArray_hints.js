@@ -8,7 +8,7 @@
     arr.splice(35, 1);
     arr.splice(20, 1);
     arr.splice(7, 1);
-    arr.solution() == [8, 21, 36];
+    arr.solution() == [7, 20, 35];
 
     Hints:
     1) use control array of 0...100
