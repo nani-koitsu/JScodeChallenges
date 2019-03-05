@@ -17,7 +17,7 @@
     // 2. write constructor accepting 2 parameters "value" and "next" initially equal to "null"
         // 3. create properties "value" equal to "value" and "next" equal to "next"
 
-// 4. create class "LinkedListNode"
+// 4. create class "LinkedList"
     // 5. create property "start" equal to "null"
     
     // 6. write method "printNodes"
