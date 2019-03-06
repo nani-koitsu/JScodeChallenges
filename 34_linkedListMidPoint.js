@@ -1,7 +1,7 @@
 /*
     Difficulty: Easy    
 
-    Create a linked list of lowercase English alphabet letters, along with a method that traverses all nodes and prints their letters on a single line separated by spaces.
+    Extend your linked list class with a new method that returns the node at the mid point of the linked list using no more than one loop.
 
     Tip: 
     1) If linked list contains an even number of items, returning the one before or one after the center is acceptable.
