@@ -13,7 +13,7 @@
     numbers.count      == 4
     numbers.popFront() == 7
     numbers.popBack()  == 3
-    numbers.popFront() == 7
+    numbers.popFront() == 5
     numbers.popFront() == 8
     numbers.popBack()  == null
 */
