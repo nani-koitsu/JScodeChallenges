@@ -16,9 +16,9 @@ function solution1(str) {
 }
 
 console.assert(solution1("No duplicates")              == true,  `Error: solution1a() failed`);
-console.assert(solution1("abcdefghijklmnopqrstuvwxyz") == true,  `Error: sUnique1b() failed`);
-console.assert(solution1("AaBbCc")                     == true,  `Error: sUnique1c() failed`);
-console.assert(solution1("Hello, world")               == false, `Error: sUnique1d() failed`);
+console.assert(solution1("abcdefghijklmnopqrstuvwxyz") == true,  `Error: solution1b() failed`);
+console.assert(solution1("AaBbCc")                     == true,  `Error: solution1c() failed`);
+console.assert(solution1("Hello, world")               == false, `Error: solution1d() failed`);
 
 function solution2(str) {
     return str == str.split("").reduce(

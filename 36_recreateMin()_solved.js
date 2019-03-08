@@ -45,7 +45,7 @@ console.assert([].solution2()              == null,                   `solution2
 Array.prototype.solution3 = function() {
     if (this.length == 0) return null;
 
-    return this.reduce((prev, curr) => prev > curr ? curr : prev);
+    return this.reduce((prev, curr) => prev >open curr ? curr : prev);
 }
 
 console.assert([1, 2, 3].solution3()       == Math.min(...[1, 2, 3]), `solution3a() failed!`);
