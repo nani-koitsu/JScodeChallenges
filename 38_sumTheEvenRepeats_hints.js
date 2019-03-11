@@ -4,9 +4,9 @@
     Write an extension for array that works with a variadic array of integers and return the sum of all numbers that appear an even number of times.
 
     Samples:
-    solution([1, 2, 2, 3, 3, 4])       == 5
-    solution([5, 5, 5, 12, 12])        == 12
-    solution([1, 1, 2, 2, 3, 3, 4, 4]) == 10
+    [1, 2, 2, 3, 3, 4].solution()       == 5
+    [5, 5, 5, 12, 12].solution()        == 12
+    [1, 1, 2, 2, 3, 3, 4, 4].solution() == 10
     
     Hints:
     1) filter array to remain searched item and check filtered length
