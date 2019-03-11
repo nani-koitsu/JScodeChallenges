@@ -1,7 +1,7 @@
 /*
     Difficulty: Tricky    
 
-    Write an extension for array of positive and negative numbers and returns a closed range containing the position of the contiguous positive numbers that sum to the highest value, or nil if nothing were found.
+    Write an extension for array of positive and negative numbers and returns a closed range containing the position of the contiguous positive numbers that sum to the highest value, or null if nothing were found.
 
     Samples:
     [0, 1, 1, -1, 2, 3, 1].solution()            == [4, 5, 6]
