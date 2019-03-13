@@ -30,6 +30,7 @@ class LinkedList {
     // solution
     reversed() {
         let copy = new LinkedList();
+        
         if (!this.start) return copy;
 
         let previousCopyNode = new LinkedListNode(this.start.value);
