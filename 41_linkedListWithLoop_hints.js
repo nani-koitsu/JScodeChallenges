@@ -3,7 +3,7 @@
 
     Someone used the Linked List you made previously, but they accidentally made one of the items link back to an earlier part of the list. As a result, the list can’t be traversed properly because it loops infinitely.
 
-    Your job is to write a function that accepts your linked list as its parameter, and returns the node at the start of the loop, i.e. the one that is linked back to.
+    Your job is to write a method that returns the node at the start of the loop, i.e. the one that is linked back to.
 
     Samples:
     You can simulate a looped list with this code.
