@@ -78,33 +78,6 @@ console.assert([12, 5, 4, 9, 3, 2, 1].solution2().join("") == [1, 2, 3, 4, 5, 9,
 console.assert(["f", "a", "b"].solution2().join("")        == ["a", "b", "f"].join(""), `solution2_b failed!`);
 console.assert([].solution2().join("")                     == [].join(""), `solution2_c failed!`);
 
-Array.prototype.solutionSonny=function() {
-    let returnVal = this.slice()
-
-    for(let j=returnVal.length; j >= 0; j--) {
-       let swapped = false
-       
-       for(let i = 0; i < j; i++) {
-           if(returnVal[i] > returnVal[i + 1]) {
-               let temp = returnVal[i]
-               
-               returnVal[i]     = returnVal[i + 1]
-               returnVal[i + 1] = temp
-
-               swapped = true
-           }
-       }
-
-       if(!swapped) return returnVal
-    }
-
-    return returnVal
-}
-
-console.assert([12, 5, 4, 9, 3, 2, 1].solutionSonny().join("") == [1, 2, 3, 4, 5, 9, 12].join(""), `solutions_a failed!`);
-console.assert(["f", "a", "b"].solutionSonny().join("")        == ["a", "b", "f"].join(""), `solutions_b failed!`);
-console.assert([].solutionSonny().join("")                     == [].join(""), `solutions_c failed!`);
-
 
 /*
 ************************* PERFORMANCE TESTS *************************
@@ -143,16 +116,6 @@ performance = (finishTime - startTime) / 1000;
 
 console.log(`Performance of solution2() is ${ performance } sec`);
 
-// test solutionS
-startTime = new Date().getTime();
-
-testArr.solutionSonny()
-
-finishTime  = new Date().getTime();
-performance = (finishTime - startTime) / 1000;
-
-console.log(`Performance of solutionSonny() is ${ performance } sec`)
-
 // test dafault sort()
 startTime = new Date().getTime();
 
@@ -167,8 +130,7 @@ console.log(`Performance of default sort() is ${ performance } sec`);
 /*
 ************************* PERFORMANCE RESULTS *************************
 
-Performance of solution1()     is 1.342 sec
-Performance of solution2()     is 1.143 sec
-Performance of solutionSonny() is 0.346 sec
-Performance of default sort()  is 0.001 sec
+Performance of solution1()    is 1.285 sec
+Performance of solution2()    is 0.246 sec
+Performance of default sort() is 0.001 sec
 */
