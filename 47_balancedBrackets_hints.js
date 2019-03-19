@@ -17,7 +17,7 @@
     12) solution("Hello")        == false
 
     Hints:
-    1) use cobject to map opening and closing brackets
+    1) use object to map opening and closing brackets
     2) use queue to track sequence
 */
 
