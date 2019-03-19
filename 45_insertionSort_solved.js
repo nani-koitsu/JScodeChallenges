@@ -101,7 +101,7 @@ const testArr = []
 for (let i of testNum) {
     testArr.push(i)
 
-    if (Math.random() > 0.8) testArr.unshift(i + 1)
+    if (Math.random() > 0.5) testArr.unshift(i + 1)
 }
 
 // test solution1
@@ -138,7 +138,7 @@ console.log(`Performance of solutionJoe() is ${ performance } sec`);
 /*
 ************************* PERFORMANCE RESULTS *************************
 
-Performance of solution1()   is 0.194 sec
-Performance of solution2()   is 0.375 sec
-Performance of solutionJoe() is 0.012 sec
+Performance of solution1()   is 0.248 sec
+Performance of solution2()   is 1.142 sec
+Performance of solutionJoe() is 0.037 sec
 */
