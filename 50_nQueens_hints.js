@@ -28,33 +28,33 @@
                     // 7. else print in line "."
             // 8. console.log empty string
         // 9. console.log empty string
-        // else
-        // 10. create variable "count" = 0
+    // else
+    // 10. create variable "count" = 0
 
-        // loop over every column
-        // 11. (label loop "boardLoop") loop 0..<board.length and name current item "column"
-            //check only queens that are placed already
-            // 12. loop 0..<queensNumber and name current item "row"
-                // find where this queens was placed
-                // 13. create variable "otherQueenColumn" equal to element of the board at position "row"
+    // loop over every column
+    // 11. (label loop "boardLoop") loop 0..<board.length and name current item "column"
+        //check only queens that are placed already
+        // 12. loop 0..<queensNumber and name current item "row"
+            // find where this queens was placed
+            // 13. create variable "otherQueenColumn" equal to element of the board at position "row"
 
-                // 14. if this queen is placed in the column we are checking, stop checking other queens and go to the next column (continue boardLoop)
+            // 14. if this queen is placed in the column we are checking, stop checking other queens and go to the next column (continue boardLoop)
 
-                // calculate the difference in our row/column and the checking queen's row/column
-                // 15. create variable "deltaRow" equal to diff between "queensNumber" and "row"
-                // 16. create variable "deltaCol" equal to diff between "otherQueenColumn" and "column"
-                
-                // if we are on a diagonal with this queen, stop checking other queens and proceed to the next column
-                // 17. continue boardLoop if "deltaRow" is equal to "deltaCol"
-                // 18. continue boardLoop if "deltaRow" is equal to "-deltaCol"
-
-            // 20. if we're still here it means this move is valid, so take a copy of the board ("boardCopy") and make the move on the copy
-            // 21. assign "column" to "boardCopy[queensNumber]"
+            // calculate the difference in our row/column and the checking queen's row/column
+            // 15. create variable "deltaRow" equal to diff between "queensNumber" and "row"
+            // 16. create variable "deltaCol" equal to diff between "otherQueenColumn" and "column"
             
-            // now call ourselves recursively, placing one queen number higher, and additing it return value to our solution counter
-            // 22. increase "count" by calling solution(boardCopy, queensNumber + 1)
+            // if we are on a diagonal with this queen, stop checking other queens and proceed to the next column
+            // 17. continue boardLoop if "deltaRow" is equal to "deltaCol"
+            // 18. continue boardLoop if "deltaRow" is equal to "-deltaCol"
+
+        // 20. if we're still here it means this move is valid, so take a copy of the board ("boardCopy") and make the move on the copy
+        // 21. assign "column" to "boardCopy[queensNumber]"
         
-        // return solution counter to the caller
+        // now call ourselves recursively, placing one queen number higher, and additing it return value to our solution counter
+        // 22. increase "count" by calling solution(boardCopy, queensNumber + 1)
+    
+    // return solution counter to the caller
 
 let board  = new Array(4)
 let queens = 0
